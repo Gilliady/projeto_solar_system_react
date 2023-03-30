@@ -1,3 +1,67 @@
-.App {
+* {
+  color: antiquewhite;
+  box-sizing: border-box;
+  font-family: monospace;
   text-align: center;
+}
+
+body {
+  background-image: url('https://www.creativefabrica.com/wp-content/uploads/2022/02/04/Galaxy-wallpaper-cosmic-background-image-Graphics-24688155-1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h2 {
+  width: 100%;
+  font-size: 1.8em;
+}
+
+#solar-system {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#missions__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+}
+
+#solar-system__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+}
+
+.missions__mission-card {
+  width: 22.5%;
+}
+
+.missions__mission-card:hover {
+  width: 25%;
+}
+
+.missions__mission-card, .solar-system__planet-card {
+  border-radius: 7px;
+  background-color: rgba(5, 23, 29, 0.95);
+  margin: 1.5px;
+  padding: 2px;
+  font-size: 18px;
+}
+
+.solar-system__planet-card {
+  width: 45%;
+}
+
+.solar-system__planet-card img {
+  max-width: 50%;
 }
