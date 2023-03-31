@@ -14,7 +14,6 @@ body {
 
 h2 {
   font-size: 1.8em;
-  width: 100%;
 }
 
 hr {
@@ -29,7 +28,7 @@ header {
   align-items: center;
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 70%;
 }
 
 .root {
@@ -39,11 +38,17 @@ header {
   width: 100%;
 }
 
-.missions__container {
+.title {
+  width: 100%;
+}
+
+.missions-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 80%;
+  max-height: 435px;
+  overflow-y: overlay;
+  width: 70%;
 }
 
 .solar-system__container {
@@ -53,20 +58,13 @@ header {
   width: 100%;
 }
 
-.missions__mission-card {
-  width: 22.5%;
-}
-
 .missions__mission-card, .solar-system__planet-card {
-  background-color: rgba(5, 23, 29, 0.95);
+  background-color: rgba(5, 23, 29, 0.75);
   border-radius: 7px;
+  flex: 1 1 45%;
   font-size: 18px;
-  margin: 1.5px;
+  margin: 5px;
   padding: 2px;
-}
-
-.solar-system__planet-card {
-  width: 22.5%;
 }
 
 .missions__mission-card:hover, .solar-system__planet-card:hover {
@@ -78,7 +76,15 @@ header {
   max-width: 50%;
 }
 
-.title {
-  width: 100%;
-}
+@media screen and ( min-width : 720px ) {
 
+  .missions__mission-card, .solar-system__planet-card {
+    background-color: rgba(5, 23, 29, 0.75);
+    border-radius: 7px;
+    flex: 1 1 20%;
+    font-size: 18px;
+    margin: 5px;
+    padding: 2px;
+  }
+
+}
