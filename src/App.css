@@ -1,4 +1,4 @@
-/* * {
+* {
   box-sizing: border-box;
   color: antiquewhite;
   font-family: monospace;
@@ -9,6 +9,7 @@ body {
   background-attachment: fixed;
   background-image: url('https://www.creativefabrica.com/wp-content/uploads/2022/02/04/Galaxy-wallpaper-cosmic-background-image-Graphics-24688155-1.jpg');
   background-repeat: no-repeat;
+  margin: 0;
 }
 
 h2 {
@@ -16,53 +17,68 @@ h2 {
   width: 100%;
 }
 
-#solar-system {
+hr {
+  width: 85%;
+}
+
+header {
+  width: 80%;
+}
+
+.solar-system {
   align-items: center;
   display: flex;
   flex-direction: column;
+  width: 80%;
 }
 
-#root {
+.root {
   align-items: center;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
-#missions__container {
+.missions__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 80%;
 }
 
-#solar-system__container {
+.solar-system__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 80%;
+  width: 100%;
 }
 
 .missions__mission-card {
   width: 22.5%;
 }
 
-.missions__mission-card:hover {
-  width: 25%;
-}
-
-.missions__mission-card,
-.solar-system__planet-card {
-  border-radius: 7px;
+.missions__mission-card, .solar-system__planet-card {
   background-color: rgba(5, 23, 29, 0.95);
+  border-radius: 7px;
+  font-size: 18px;
   margin: 1.5px;
   padding: 2px;
-  font-size: 18px;
 }
 
 .solar-system__planet-card {
-  width: 45%;
+  width: 22.5%;
+}
+
+.missions__mission-card:hover, .solar-system__planet-card:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
 }
 
 .solar-system__planet-card img {
   max-width: 50%;
-}/*  */
+}
+
+.title {
+  width: 100%;
+}
+
